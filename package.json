@@ -9,7 +9,9 @@
     "web": "expo start --web",
     "clean": "git clean -xdf .cache .expo android ios node_modules",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\""
   },
   "dependencies": {
     "expo": "~52.0.11",
@@ -27,6 +29,7 @@
     "eslint-config-expo": "~8.0.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2",
     "typescript": "^5.3.3"
   },
   "private": true
