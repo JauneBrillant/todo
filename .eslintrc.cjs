@@ -49,7 +49,7 @@ const config = {
     "@typescript-eslint/no-var-requires": "off",
   },
   ignorePatterns: [
-    //'.eslintrc.cjs',
+    '.eslintrc.cjs',
     'babel.config.js',
     //'metro.config.js'
   ],
